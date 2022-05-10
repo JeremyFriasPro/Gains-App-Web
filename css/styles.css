@@ -1,0 +1,161 @@
+:root {
+    --red: #C4333A;
+    --dark: #17181A;
+    --white: #ffffff;
+
+    --main-font: "Raleway", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--white);
+    font-family: var(--main-font);
+}
+
+body {
+    background: var(--dark);
+}
+
+/* Section */
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Landing Page */
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/images/Landing\ Page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Navigation */
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#links ul {
+    display: flex;
+}
+
+#links a {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+#links a:hover {
+    transition: 0.40s;
+    background: var(--red);
+}
+
+@media only screen and (max-width: 700px) {
+    #links {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #links {
+        display: inline;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+#logo img {
+    width: clamp(3.5rem, 5vw, 4rem);
+}
+
+#hamburger-menu img {
+    width: clamp(2.5rem, 4vw, 3rem);
+}
+
+/* Hero Section */
+
+#hero-section {
+    flex-grow: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 960px) {
+    #hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+img#full-logo {
+    width: clamp(20rem,40vw,40rem);
+}
+
+#hero-section p {
+    margin: 1rem;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+@media only screen and (max-width: 960px) {
+    #hero-section p {
+        text-align: center;
+    }
+}
+
+.red-highlight {
+    color: var(--red);
+}
+
+#btn-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 960px) {
+    #btn-section {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.icon-btn {
+    border: none;
+    border-radius: 7px;
+    font-size: 1.45rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    width: clamp(18rem, 50vw, 23rem);
+    padding: 1.3rem;
+    margin: 0.25rem;
+}
+
+.icon-btn img {
+    margin-right: 0.4rem;
+}
+
+#how-btn {
+    background: var(--red);
+}
