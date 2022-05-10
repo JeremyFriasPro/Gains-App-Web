@@ -4,5 +4,5 @@
 
 - HOME
 - FAQ
-- BENEFTIS
+- BENEFITS
 
