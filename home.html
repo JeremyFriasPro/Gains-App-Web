@@ -9,48 +9,91 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <div id="main-container">
+    <div class="main-container">
         <div class="section" id="landing-page">
-            <div id="nav">
-                <div id="logo">
+            <div class="small-screen-nav">
+                
+                <div class="close" onclick="closeNav()">
+                    <img src="./assets/icons/icons8-close-480.png" alt="close">
+                </div>
+                <ul>
+                    <li class="current_link"><a href="#">Home</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./benefits.html">Benefits</a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <div class="logo">
                     <img src="./assets/images/Gains-Logo.png" alt="logo-icon">
                 </div>
-                <div id="links">
+                <div class="links">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" id="home_link" class="active_link">Home</a>
                         </li>
                         <li>
-                            <a href="./faq.html">FAQ</a>
+                            <a href="./faq.html" id="faq_link">FAQ</a>
                         </li>
                         <li>
-                            <a href="./benefits.html">Benefits</a>
+                            <a href="./benefits.html" id="benefits_link">Benefits</a>
                         </li>
                     </ul>
                 </div>
-                <div id="hamburger-menu">
-                    <img src="./assets/icons/Menu.svg" alt="">
+                <div class="hamburger-menu" onclick="openNav()">
+                    <img src="./assets/icons/Menu.svg" alt="menu">
                 </div>
             </div>
             <div id="hero-section">
                 <img src="./assets/images/Gains-App-Full Logo.png" alt="full-logo" id="full-logo">
-                <p>A social platform that provides a way for users to compete, wager and earn income participating in <span class="red-highlight">live fitness challenges.</span></p>
+                <p>A social platform that provides a way for users to compete, wager and earn income participating in <span class="red-highlight">live fitness&nbspchallenges.</span></p>
                 <div id="btn-section">
-                    <button class="icon-btn" id="how-btn">
-                        <img src="/assets/icons/question-mark-circle.svg" alt="question">
-                        <div>HOW IT WORKS</div>
-                    </button>
-                    <button class="icon-btn" id="count-btn">
-                        <img src="/assets/icons/watch.svg" alt="watch">
-                        <div class="red-highlight">COUNTDOWN</div>
-                    </button>
+                    <a href="#works">
+                        <button class="icon-btn" id="how-btn">
+                            <img src="/assets/icons/question-mark-circle.svg" alt="question">
+                            <div>HOW IT WORKS</div>
+                        </button>
+                    </a>
+                    <a href="#countdown">
+                        <button class="icon-btn" id="count-btn">
+                            <img src="/assets/icons/watch.svg" alt="watch">
+                            <div class="red-highlight">COUNTDOWN</div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-section">
+                <div id="scroll">
+                    <div id="ball"></div>
                 </div>
             </div>
         </div>
-        <div class="section">
-
+        <div id="section-two">
+            <div id="mission">
+                <h1>“Our mission is to connect, entertain and reward the fitness&nbspcommunity.”</h1>
+                <p>HAYES KANYIKE (FOUNDER)</p>
+            </div>
+            <div id="video">
+                <video muted autoplay loop>
+                    <source src="/assets/videos/Hayes.mp4" type="video/mp4">
+                  </video>
+            </div>
         </div>
-        <div class="section">
+        <div id="works">
+            <div id="description">
+                <h1>HOW IT WORKS</h1>
+                <p>Click through the three ‘user’ types of Gains App.</p>
+            </div>
+            <div id="filter">
+                <div id="tabs">
+                    <div id="press_btns">
+                        <button id="com-btn">Competition</button>
+                        <button id="aud-btn">Audience</button>
+                        <button id="jud-btn">Judges</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="countdown">
 
         </div>
     </div>
