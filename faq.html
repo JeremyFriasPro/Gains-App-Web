@@ -9,6 +9,17 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
+    <div class="small-screen-nav">
+                
+        <div class="close" onclick="closeNav()">
+            <img src="./assets/icons/icons8-close-480.png" alt="close">
+        </div>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li class="current_link"><a href="#">FAQ</a></li>
+            <li><a href="./benefits.html">Benefits</a></li>
+        </ul>
+    </div>
     <div class="nav">
         <div class="logo">
             <img src="./assets/images/Gains-Logo.png" alt="logo-icon">
@@ -27,7 +38,7 @@
             </ul>
         </div>
         <div class="hamburger-menu">
-            <img src="./assets/icons/Menu.svg" alt="">
+            <img src="./assets/icons/Menu.svg" alt="menu" onclick="openNav()">
         </div>
     </div>
     <div class="faq_context">

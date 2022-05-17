@@ -104,6 +104,7 @@ body {
     font-weight: bold;
     font-size: clamp(2.15rem, 2.5vw, 4rem);
     background: var(--dark);
+    padding-top: 10rem;
 }
 
 .small-screen-nav ul {
@@ -366,16 +367,19 @@ img#full-logo {
 
 #press_btns {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #press_btns button {
     border: none;
     border-radius: 7px;
-    background: var(--gray-blue);
     font-size: 1.45rem;
     width: 200px;
     padding: 1rem 0.8rem;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 #press_btns button:hover {
@@ -390,12 +394,46 @@ img#full-logo {
     #press_btns {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #press_btns button {
         width: 70vw;
         margin: 0.15rem 0rem;
     }
+}
+
+button.tab_active {
+    background: var(--white);
+    color: var(--red);
+}
+
+button.tab_notActive {
+    background: var(--gray-blue);
+    color: var(--white);
+}
+
+.filter-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-images img {
+    border-radius: 7px;
+    height: clamp(25rem, 75vh, 40rem);
+    border: 2px solid white;
+    margin: 1rem 0.2rem;
+    max-width: 100%;
+}
+
+.filter_description {
+    font-size: clamp(1.3rem, 1.5vw, 3rem);
+}
+
+.filter_description ol li {
+    margin: 0.5rem 0rem;
 }
 
 /* ------------------------------- FAQ (Page) ----------------------------------- */
